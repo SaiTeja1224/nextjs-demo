@@ -42,7 +42,7 @@ export async function getStaticPaths() {
   await mongoose.disconnect();
 
   return {
-    fallback: true,
+    fallback: "blocking",
     paths: meetupIds.map((meet) => ({
       params: { "meetup-id": meet._id.toString() },
     })),
