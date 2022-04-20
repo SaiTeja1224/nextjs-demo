@@ -14,7 +14,7 @@ const Home = (props) => {
           content="A Highly Available React Meetups finder"
         />
       </Head>
-      <MeetupList meetups={props.meetups} />;
+      <MeetupList meetups={props.meetups} />
     </>
   );
 };
